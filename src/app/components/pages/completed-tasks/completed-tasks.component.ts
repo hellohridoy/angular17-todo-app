@@ -6,34 +6,34 @@ import { TaskListComponent } from '../../task-list/task-list.component';
 @Component({
   selector: 'app-completed-tasks',
   standalone: true,
-  imports: [PageTitleComponent,TaskListComponent],
+  imports: [PageTitleComponent, TaskListComponent],
   templateUrl: './completed-tasks.component.html',
-  styleUrl: './completed-tasks.component.scss'
+  styleUrl: './completed-tasks.component.scss',
 })
 export class CompletedTasksComponent {
-  newTask="";
-  taskList:any[]=[];
-  httpService=inject(HttpService);
+  newTask = '';
+  taskList: any[] = [];
+  httpService = inject(HttpService);
 
-  ngOnInit(){
+  ngOnInit() {
     this.getAllTasks();
   }
-  getAllTasks(){
-    this.httpService.getAllTasks().subscribe((result:any)=>{
-      this.taskList=result.filter((x:any)=>x.completed==true);
-    })
+  getAllTasks() {
+    this.httpService.getAllTasks().subscribe((result: any) => {
+      this.taskList = result.filter((x: any) => x.completed == true);
+    });
   }
-  onComplete(task:any){
-    task.completed=true;
-    console.log("complete",task)
-    this.httpService.updateTask(task).subscribe(()=>{
+  onComplete(task: any) {
+    task.completed = true;
+    console.log('complete', task);
+    this.httpService.updateTask(task).subscribe(() => {
       this.getAllTasks();
-    })
+    });
   }
-  onImportant(task:any){
-    task.important=true;
-    this.httpService.updateTask(task).subscribe(()=>{
+  onImportant(task: any) {
+    task.important = true;
+    this.httpService.updateTask(task).subscribe(() => {
       this.getAllTasks();
-    })
+    });
   }
 }

@@ -1,79 +1,42 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "learn angular",
       "important": true,
       "completed": true
     },
     {
-      "title": "kjfgkjfgkjfg",
-      "id": 2,
-      "important": true,
-      "completed": true
-    },
-    {
-      "title": "kjfgkjfgkjfgjnfkj j",
-      "id": 3,
-      "important": true,
-      "completed": true
-    },
-    {
-      "title": "kjdffkj fj fkjd",
-      "id": 4,
-      "completed": true
-    },
-    {
-      "title": "ffdjkd f",
-      "id": 5,
-      "completed": true
-    },
-    {
-      "title": " fdfjkdf ",
-      "id": 6,
-      "important": true,
-      "completed": true
-    },
-    {
-      "title": "dfk dlkdf ",
-      "id": 7,
-      "important": true,
-      "completed": true
-    },
-    {
-      "title": "dlkf ",
-      "id": 8,
+      "id": "c293",
+      "title": "f",
       "completed": true,
       "important": true
     },
     {
-      "title": "kgklflgfk",
-      "id": 9,
-      "completed": true,
-      "important": true
-    },
-    {
-      "title": "kjgk ggkjf gjkf ",
-      "id": 10,
-      "completed": true,
-      "important": true
-    },
-    {
-      "title": "gkjfg fgkj",
-      "id": 11,
+      "id": "868e",
+      "title": "f",
       "important": true,
       "completed": true
     },
     {
-      "title": "new task",
-      "id": 12,
+      "id": "33e1",
+      "title": "f",
       "important": true,
       "completed": true
     },
     {
-      "title": "lkklkl",
-      "id": 13,
-      "completed": true
+      "id": "e684",
+      "title": "d",
+      "completed": true,
+      "important": true
+    },
+    {
+      "id": "b80f",
+      "title": "d"
+    },
+    {
+      "id": "b6e4",
+      "title": "d"
     }
   ]
 }

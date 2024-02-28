@@ -21,13 +21,13 @@ export class AllTaskComponent {
   stateService = inject(StateService);
   ngOnInit() {
     this.stateService.searchSubject.subscribe((value) => {
-      console.log("search",value)
+      console.log('search', value);
       if (value) {
         this.taskList = this.intialTaskList.filter((x) =>
           x.title.toLowerCase().includes(value.toLowerCase())
         );
-      }else{
-        this.taskList=this.intialTaskList;
+      } else {
+        this.taskList = this.intialTaskList;
       }
     });
     this.getAllTasks();
